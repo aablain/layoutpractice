@@ -1,0 +1,116 @@
+*:not(body):not(html) {
+box-sizing: border-box;
+border: 1px dashed #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1330px;
+  margin: auto;
+}
+
+.boxes {
+  text-align: center;
+}
+
+img {
+  /*width: 200px;*/
+  max-width: 100%;
+}
+
+.uppermost h4{
+  /*min-height: 50px;*/
+  background-color: #85C1E9;
+  width: 300px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline;
+  padding: 5px 15px;
+  background-color: #85C1E9;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.boxes h2 {
+  background-color: #A3E4D7;
+  color: #F4F6F7;
+  text-shadow: 2px 2px 10px #333;
+  min-width: 165px;
+}
+
+.bottombars h1, .bottombars h2 {
+  background-color: #58D68D;
+  margin-left: 2%;
+}
+
+.boxes:nth-of-type(2n) {
+ background-color: #85C1E9;
+}
+
+.boxes:nth-of-type(2n+1) {
+background-color: #F9E79F;
+}
+
+.bottombars h2 {
+  max-width: 96%;
+}
+
+@media only screen and (max-width: 3000px) {
+  .boxes {
+    width: 24%;
+    display: inline-block;
+    margin-left: 0.38%;
+    margin-right: 0.38%;
+  }
+  .boxes h2 {
+    width: 56%;
+  }
+
+  ul {
+    text-align: right;
+    margin-top: -46px;
+  }
+}
+
+@media only screen and (max-width: 1264px) {
+  .boxes {
+    width: 45%;
+    display: inline-block;
+  }
+  .boxes h2 {
+    width: 43%;
+  }
+
+  .uppermost h4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .boxes {
+    width: 100%;
+  }
+
+  .boxes h2 {
+    width: 36%;
+  }
+
+  ul {
+    margin-left: -50px;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .bottombars h1, .bottombars h2 {
+    margin-left: 0;
+  }
+}
