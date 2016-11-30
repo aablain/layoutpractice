@@ -1,0 +1,189 @@
+*:not(body):not(html) {
+box-sizing: border-box;
+border: 1px dashed #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1204px;
+  margin: auto;
+}
+
+.top {
+  width: 100%;
+}
+
+.topright span {
+  background-color: #AED6F1;
+}
+
+.topleft img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+.bottom {
+  width: 100%;
+}
+
+.bottom .text {
+  /*max-width: 50%;*/
+}
+
+.bottom img {
+  /*max-width: 35%;*/
+  border-radius: 50%;
+}
+
+.textpicsboxes img {
+  width: 10%;
+  margin-bottom: 55px;
+}
+
+.actualtext {
+  width: 80%;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 3000px) {
+  .topleft span {
+    font-size: 4.8em;
+  }
+
+  .pics {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .pics img {
+    max-width: 100%;
+  }
+
+  .texts {
+    width: 29%;
+    display: inline-block;
+  }
+
+  .textpics {
+    width: 29%;
+    display: inline-block;
+  }
+
+  .topright {
+    text-align: right;
+  }
+
+  .topright span {
+    margin-right: 50px;
+  }
+
+  .text {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .bottom img {
+    width: 40%;
+  }
+
+  .bottom {
+    padding-bottom: 50px;
+  }
+
+  .textstuff, .textpicsboxes {
+    margin-bottom: 100%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  /*.content {
+    display: inline-block;
+  }*/
+
+  .textpics {
+    width: 45%;
+    display: inline-block;
+    /*margin-left: 7%;*/
+  }
+
+  .texts {
+    width: 45%;
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .pics {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .pics img {
+    max-width: 32.8%;
+  }
+
+  .textstuff, .textpicsboxes {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .topleft span {
+    font-size: 3.3em;
+  }
+
+  .topright {
+    text-align: center;
+    width: 100%;
+  }
+
+  .topright span {
+    padding: 3px;
+    min-width: 230px;
+  }
+
+  .text {
+    width: 100%;
+    text-align: left;
+  }
+
+  .bottom {
+    text-align: center;
+  }
+
+  .bottom img {
+    width: 80%;
+  }
+
+  .pics img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .texts {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .textpics {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .textpicsboxes {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .textpicsboxes img {
+    /*width: 10%;*/
+    margin-bottom: 55px;
+  }
+
+  .topright span {
+    margin-right: 0;
+  }
+}
